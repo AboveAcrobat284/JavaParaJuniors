@@ -2,13 +2,6 @@ package com.upchiapas.javaparajuniors.models;
 import static com.upchiapas.javaparajuniors.controllers.LoginController.users;
 public  class ValidateUser {
 
-
-    public ValidateUser()
-    {
-        users.add(new User("Barrigaagui","1234"));
-        users.add(new User("cgumeta","4321"));
-    }
-
     public void ingresarUsuario(String username, String password)
     {
         users.add(new User(username,password));

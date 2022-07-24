@@ -55,7 +55,8 @@ public class LoginController {
 
     @FXML
     void btnIniciarSesionOnMouseClicked(MouseEvent event) {
-        ValidateUser user = new ValidateUser();if(user.autenticarUser(txtUsername.getText(), txtPassword.getText()))
+        ValidateUser user = new ValidateUser();
+        if(user.autenticarUser(txtUsername.getText(), txtPassword.getText()))
 
         {
             HelloApplication.setFXML("menu-view","Menu - Java para Juniors");
@@ -72,13 +73,22 @@ public class LoginController {
 
     @FXML
     void btnEliminarCuentaOnMouseClicked(MouseEvent event) {
-        ValidateUser user = new ValidateUser();if(user.autenticarUser(txtUsername.getText(), txtPassword.getText()))
+        ValidateUser user = new ValidateUser();
+        if(user.autenticarUser(txtUsername.getText(), txtPassword.getText()))
         {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setHeaderText(null);
-            alert.setTitle("Info");
-            alert.setContentText("La cuenta ha sido eliminada exitosamente!");
-            alert.showAndWait();
+            int iterator=0;
+            for (User u:users)
+            {
+                System.out.println(u.getUsername());
+                if(txtUsername.getText().equals(u.getUsername()))
+                {
+                    System.out.println("Lo encontre");
+                    users.remove(iterator);
+                    break;
+                }
+                iterator++;
+            }
+            System.out.println(iterator);
         }
         else
         {

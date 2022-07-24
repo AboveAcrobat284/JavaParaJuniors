@@ -79,16 +79,18 @@ public class LoginController {
             int iterator=0;
             for (User u:users)
             {
-                System.out.println(u.getUsername());
                 if(txtUsername.getText().equals(u.getUsername()))
                 {
-                    System.out.println("Lo encontre");
                     users.remove(iterator);
                     break;
                 }
                 iterator++;
             }
-            System.out.println(iterator);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setTitle("Info");
+            alert.setContentText("La cuenta ha sido eliminada exitosamente!");
+            alert.showAndWait();
         }
         else
         {

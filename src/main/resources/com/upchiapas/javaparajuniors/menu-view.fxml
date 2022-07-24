@@ -21,7 +21,7 @@
                   <MenuItem fx:id="btnMenuStringDos" mnemonicParsing="false" onAction="#btnAbrirMenuStringDos" text="Funciones Básicas con Cadenas" />
                </items>
             </MenuButton>
-            <MenuButton fx:id="cbBasico" layoutX="13.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#cbBasicoOnMouseClicked" onMouseExited="#cbBasicoOnMouseExited" prefHeight="25.0" prefWidth="184.0" text="Conceptros Básicos de Java" textAlignment="CENTER">
+            <MenuButton fx:id="cbBasico" layoutX="13.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#cbBasicoOnMouseClicked" onMouseExited="#cbBasicoOnMouseExited" prefHeight="25.0" prefWidth="184.0" text="Conceptos Básicos de Java" textAlignment="CENTER">
               <items>
                 <MenuItem fx:id="btnMenuCBUno" mnemonicParsing="false" onAction="#btnAbrirMenuCBUno" text="Conceptos Básicos en Java" />
                 <MenuItem fx:id="btnAbrirMenuCBDos" mnemonicParsing="false" onAction="#btnAbrirMenuCBDos" text="Variables en Java" />
@@ -57,7 +57,7 @@
                   <Font size="13.0" />
                </font>
             </Label>
-            <Button fx:id="btnRegresar" layoutX="134.0" layoutY="368.0" mnemonicParsing="false" onMouseClicked="#btnRegresarALoginOnMouseClicked" text="Regresar" />
+            <Button fx:id="btnRegresar" layoutX="111.0" layoutY="368.0" mnemonicParsing="false" onMouseClicked="#btnRegresarALoginOnMouseClicked" text="Cerrar Sesión" />
          </children>
       </Pane>
       <Label layoutX="303.0" layoutY="38.0" text="Java para Juniors">

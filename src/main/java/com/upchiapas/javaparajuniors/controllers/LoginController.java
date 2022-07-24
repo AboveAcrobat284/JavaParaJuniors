@@ -24,6 +24,8 @@ public class LoginController {
     private Button btnSalir;
 
     @FXML
+    private Button btnEliminarCuenta;
+    @FXML
     private PasswordField txtPassword;
 
     @FXML
@@ -33,12 +35,22 @@ public class LoginController {
 
     @FXML
     void btnCrearCuentaOnMouseClicked(MouseEvent event) {
-        users.add(new User(txtUsername.getText(),txtPassword.getText()));
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setTitle("Info");
-        alert.setContentText("La cuenta ha sido creada exitosamente!");
-        alert.showAndWait();
+        if(txtUsername.getText().isBlank()||txtPassword.getText().isBlank())
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText("Parametros ingresados no validos, la cuenta no se creará");
+            alert.showAndWait();
+        }
+        else {
+            users.add(new User(txtUsername.getText(), txtPassword.getText()));
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setTitle("Info");
+            alert.setContentText("La cuenta ha sido creada exitosamente!");
+            alert.showAndWait();
+        }
     }
 
     @FXML
@@ -47,6 +59,26 @@ public class LoginController {
 
         {
             HelloApplication.setFXML("menu-view","Menu - Java para Juniors");
+        }
+        else
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Login - Error");
+            alert.setContentText("El usuario no existe");
+            alert.showAndWait();
+        }
+    }
+
+    @FXML
+    void btnEliminarCuentaOnMouseClicked(MouseEvent event) {
+        ValidateUser user = new ValidateUser();if(user.autenticarUser(txtUsername.getText(), txtPassword.getText()))
+        {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setTitle("Info");
+            alert.setContentText("La cuenta ha sido eliminada exitosamente!");
+            alert.showAndWait();
         }
         else
         {

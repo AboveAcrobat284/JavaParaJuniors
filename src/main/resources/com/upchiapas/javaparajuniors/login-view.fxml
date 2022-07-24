@@ -9,28 +9,28 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #EA2D2F;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.javaparajuniors.controllers.LoginController">
    <children>
-      <TextField fx:id="txtUsername" layoutX="20.0" layoutY="250.0" prefHeight="30.0" prefWidth="260.0" />
-      <Label layoutX="21.0" layoutY="220.0" text="Usuario" textFill="WHITE">
+      <TextField fx:id="txtUsername" layoutX="20.0" layoutY="221.0" prefHeight="30.0" prefWidth="260.0" />
+      <Label layoutX="21.0" layoutY="191.0" text="Usuario" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="289.0" text="Contraseña" textFill="WHITE">
+      <Label layoutX="20.0" layoutY="260.0" text="Contraseña" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="txtPassword" layoutX="20.0" layoutY="317.0" prefHeight="30.0" prefWidth="260.0" />
-      <Button fx:id="btnIniciarSesion" layoutX="20.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#btnIniciarSesionOnMouseClicked" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #3C4858;" text="Iniciar Sesión" textFill="WHITE" />
-      <Button fx:id="btnCrearCuenta" layoutX="20.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#btnCrearCuentaOnMouseClicked" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #3C4858;" text="Crear cuenta" textFill="WHITE" />
-      <Button fx:id="btnSalir" layoutX="20.0" layoutY="446.0" mnemonicParsing="false" onMouseClicked="#btnSalirOnMouseClicked" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #3C4858;" text="Salir" textFill="WHITE" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="47.0" pickOnBounds="true">
+      <PasswordField fx:id="txtPassword" layoutX="20.0" layoutY="288.0" prefHeight="30.0" prefWidth="260.0" />
+      <Button fx:id="btnIniciarSesion" layoutX="20.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#btnIniciarSesionOnMouseClicked" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #3C4858;" text="Iniciar Sesión" textFill="WHITE" />
+      <Button fx:id="btnCrearCuenta" layoutX="20.0" layoutY="377.0" mnemonicParsing="false" onMouseClicked="#btnCrearCuentaOnMouseClicked" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #3C4858;" text="Crear cuenta" textFill="WHITE" />
+      <Button fx:id="btnSalir" layoutX="20.0" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#btnSalirOnMouseClicked" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #3C4858;" text="Salir" textFill="WHITE" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="18.0" pickOnBounds="true">
          <image>
             <Image url="@assets/img/qqqqqq.jpg" />
          </image>
       </ImageView>
+      <Button fx:id="btnEliminarCuenta" layoutX="20.0" layoutY="418.0" mnemonicParsing="false" onMouseClicked="#btnEliminarCuentaOnMouseClicked" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #3C4858;" text="Eliminar Cuenta" textFill="WHITE" />
    </children>
 </AnchorPane>

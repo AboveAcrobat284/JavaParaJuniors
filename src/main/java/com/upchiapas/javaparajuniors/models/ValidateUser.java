@@ -1,6 +1,5 @@
 package com.upchiapas.javaparajuniors.models;
 import static com.upchiapas.javaparajuniors.controllers.LoginController.users;
-
 public  class ValidateUser {
 
 

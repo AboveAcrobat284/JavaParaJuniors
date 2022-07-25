@@ -7,71 +7,10 @@ import java.io.InputStreamReader;
 import com.upchiapas.javaparajuniors.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
 
 public class MenuController {
-
-    @FXML
-    private MenuItem btnAbrirMenuCBCinco;
-
-    @FXML
-    private MenuItem btnAbrirMenuCBCuatro;
-
-    @FXML
-    private MenuItem btnAbrirMenuCBDos;
-
-    @FXML
-    private MenuItem btnAbrirMenuCBTres;
-
-    @FXML
-    private MenuItem btnMenuASUno;
-
-    @FXML
-    private MenuItem btnMenuCBUno;
-
-    @FXML
-    private MenuItem btnMenuOCinco;
-
-    @FXML
-    private MenuItem btnMenuOCuatro;
-
-    @FXML
-    private MenuItem btnMenuODos;
-
-    @FXML
-    private MenuItem btnMenuOTres;
-
-    @FXML
-    private MenuItem btnMenuOUno;
-
-    @FXML
-    private MenuItem btnMenuSCCuatro;
-
-    @FXML
-    private MenuItem btnMenuSCDos;
-
-    @FXML
-    private MenuItem btnMenuSCTres;
-
-    @FXML
-    private MenuItem btnMenuSCUno;
-
-    @FXML
-    private MenuItem btnMenuStringDos;
-
-    @FXML
-    private MenuItem btnMenuStringUno;
-
-    @FXML
-    private Button btnRegresar;
-
-    @FXML
-    private MenuButton cbBasico;
-
     @FXML
     private TextArea txaInfo;
 

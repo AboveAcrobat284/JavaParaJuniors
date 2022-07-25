@@ -5,7 +5,6 @@ import com.upchiapas.javaparajuniors.models.User;
 import com.upchiapas.javaparajuniors.models.ValidateUser;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -14,17 +13,7 @@ import java.util.ArrayList;
 
 public class LoginController {
 
-    @FXML
-    private Button btnCrearCuenta;
 
-    @FXML
-    private Button btnIniciarSesion;
-
-    @FXML
-    private Button btnSalir;
-
-    @FXML
-    private Button btnEliminarCuenta;
     @FXML
     private PasswordField txtPassword;
 
